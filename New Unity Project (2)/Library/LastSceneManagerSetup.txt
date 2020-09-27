@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Bobo/Bobo.unity
+- path: Assets/diavolofkhot/diavolofkhot.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
