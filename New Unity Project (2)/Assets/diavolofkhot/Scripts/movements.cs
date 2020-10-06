@@ -55,4 +55,8 @@ public class movements : MonoBehaviour
         if (jumping == 0) jumping = 1;
         else jumping = 0;
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        jumping = 0;
+    }
 }
