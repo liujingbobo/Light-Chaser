@@ -1,34 +1,7 @@
 fileFormatVersion: 2
 guid: 60f0e11ad485a134d8621a25c6987a16
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -301472049416987906
-    second: "\u5730\u5757_0"
-  - first:
-      213: 5516333870596892590
-    second: "\u5730\u5757_1"
-  - first:
-      213: 7324297882170169787
-    second: "\u5730\u5757_2"
-  - first:
-      213: -8472568494567287573
-    second: "\u5730\u5757_3"
-  - first:
-      213: 4249020935300614375
-    second: "\u5730\u5757_4"
-  - first:
-      213: 1501731650368308783
-    second: "\u5730\u5757_5"
-  - first:
-      213: 3500118146197101691
-    second: "\u5730\u5757_6"
-  - first:
-      213: 3989414050397075962
-    second: "\u5730\u5757_7"
-  - first:
-      213: 1009861743257916273
-    second: "\u5730\u5757_8"
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,63 +71,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: "\u5730\u5757_0"
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 2468
-        width: 555
-        height: 487
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efa9ac0b4c4f0dbf0800000000000000
-      internalID: -301472049416987906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u5730\u5757_1"
-      rect:
-        serializedVersion: 2
-        x: 822
-        y: 2468
-        width: 516
-        height: 488
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea72263bd64fd8c40800000000000000
-      internalID: 5516333870596892590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

@@ -17,16 +17,26 @@ public class Tiles : MonoBehaviour
     public Tilemap tilemap;
     Vector3 playerPosition;
     Vector3Int  cellPosition;
+    loadTiles loadtiles;
     int[,] Map;
     int width, height;
-    //public 
-    Tile tile1;
-    Dictionary<int, string> Dic=new Dictionary<int, string>();
+    //Dictionary<int, string> Dic=new Dictionary<int, string>();
+    Dictionary<int, Tile> Dic = new Dictionary<int, Tile>();
     // Start is called before the first frame update
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
+        //movingTiles.array= new int[movingTileNum,2];
+        Dic.Clear();
         makeDic();
-        makeMap();
+        foreach (var str in Dic)
+        {
+            //makeMap(tile,idx);
+            makeMap(str.Value,str.Key);
+        }
     }
 
     // Update is called once per frame
@@ -36,6 +46,40 @@ public class Tiles : MonoBehaviour
         cellPosition = tilemap.WorldToCell(playerPosition);
         handleTiles();
     }
+    IEnumerator fade(Vector3Int pos)
+    {
+        int t = Map[height / 2 - pos.y - 1, pos.x + width / 2],flag=0;
+        Tile tile0 = Dic[t];
+        float time = 0.05f;
+        for (float i = 1.0f; i >= 0.0f; i -= 5*Time.deltaTime)
+        {
+            yield return new WaitForSeconds(time);
+            Color c = tile0.color;
+            //Color c = tilemap.color;
+            c.a = i;
+            //tilemap.color = c;
+            //tilemap.SetTile(pos, tile0);
+            tilemap.SetColor(pos, c);
+           // Debug.Log(tile0.color.a);
+        }
+        /*tilemap.SetTile(pos,Dic[t+1]);
+        for (float i = 0.4f; i <= 1; i += 5 * Time.deltaTime)
+        {
+            yield return new WaitForSeconds(time);
+            Color c = tile0.color;
+            c.a = i;
+            tilemap.SetColor(pos, c);
+        }*/
+        yield return new WaitForSeconds(time);
+        Color cc = Dic[t].color;
+        cc.a = 0;
+        tilemap.SetColor(pos,cc);
+        //tilemap.SetTile(pos, Dic[t]);
+        Debug.Log("fade");
+        yield return new WaitForSeconds(time*10);
+        //StartCoroutine(show(pos));
+    }
+    
     void makeDic()
     {
         string dicText = DicText.text;
@@ -43,11 +87,15 @@ public class Tiles : MonoBehaviour
         foreach (string str in pairs)
         {
             string[] pair = str.Split(',');
-            Dic.Add(int.Parse(pair[0]), "Tiles/" + pair[1]);
-            //Debug.Log(Dic[1]);
+            Tile tile = Resources.Load("Tiles/"+pair[1], typeof(Tile)) as Tile;
+            
+            //Color c = new Color(); c.a = 0.0f;
+            //tile.color=c;
+            //Dic.Add(int.Parse(pair[0]), "Tiles/" + pair[1]);
+            Dic.Add(int.Parse(pair[0]), tile);
         }
     }
-    void makeMap()
+    void makeMap(Tile tile,int key)
     {
         string mapText = MapText.text;
         string[] col = mapText.Split('\n');
@@ -68,12 +116,12 @@ public class Tiles : MonoBehaviour
         {
             for (int i = 0; i < width; i++)
             {
-                if (Map[j, i] > 0)
+                if (Map[j, i] ==key)
                 {
-                    string path =Dic[Map[j,i]];
-                    tile1 = Resources.Load(path, typeof(Tile)) as Tile;
-                    //Debug.Log(path);
-                    tilemap.SetTile(new Vector3Int((i - width / 2), height / 2 - j-1, 0), tile1);
+                    //string path =Dic[key];
+                    //tile= Resources.Load(path, typeof(Tile)) as Tile;
+                    //if (tile) Debug.Log("2:"+tile.color.a);
+                    tilemap.SetTile(new Vector3Int((i - width / 2), height / 2 - j-1, 0), tile);
                 }
             }
         }
@@ -89,7 +137,7 @@ public class Tiles : MonoBehaviour
             //Debug.Log("人物坐标" + playerPosition + "cell" + cellPosition + "tb"+(cellPosition+new Vector3Int(0,-1,0)));
             //Debug.Log(height/2-realCellPosition.y+" "+ (realCellPosition.x+width/2)+" "
               //  +Map[height / 2 - realCellPosition.y, realCellPosition.x+width/2]);
-            if (tb == null||Map[height / 2 - realCellPosition.y-1, realCellPosition.x + width / 2] !=1)
+            if (tb == null)//||Map[height / 2 - realCellPosition.y-1, realCellPosition.x + width / 2] !=1)
             {
                 return;
             }
@@ -99,10 +147,31 @@ public class Tiles : MonoBehaviour
             //tilemap.RefreshAllTiles();
         }
         //
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M)&&this.tag!="GreenMap")
         {
-            Vector3Int realCellPosition = cellPosition + new Vector3Int(0, 1, 0);
+            Vector3 realCellPosition = cellPosition + new Vector3(0.5f, 0.5f, 0);
+            Vector3Int realCellPosition2 = cellPosition + new Vector3Int(0, -1, 0);
+            tilemap.SetTileFlags(realCellPosition2,TileFlags.None);
+            //tilemap.SetColor(realCellPosition2, Color.red);
+            StartCoroutine(fade(realCellPosition2));
+            //tilemap.SetTile(realCellPosition2, 
+            //  Dic[Map[height / 2 - realCellPosition2.y - 1, realCellPosition2.x + width / 2]]);
+            //Debug.Log(Dic[Map[height / 2 - realCellPosition2.y - 1, realCellPosition2.x + width / 2]].color.a);
             GameObject newGrass = Instantiate(grass, realCellPosition,Quaternion.identity);
+        }
+    }
+    private void OnDisable()
+    {
+        string dicText = DicText.text;
+        string[] pairs = dicText.Split('\n');
+        foreach (string str in pairs)
+        {
+            string[] pair = str.Split(',');
+            Tile tile = Resources.Load("Tiles/" + pair[1], typeof(Tile)) as Tile;
+            //Debug.Log(tile.sprite);
+            Color c = tile.color;
+            c.a = 1;
+            tile.color=c;
         }
     }
 }

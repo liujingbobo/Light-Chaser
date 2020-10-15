@@ -65,10 +65,14 @@
     <Compile Include="Assets\CharacterController2D.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\diavolofkhot\Scripts\Tiles.cs" />
+    <Compile Include="Assets\diavolofkhot\Scripts\controlTiles.cs" />
     <Compile Include="Assets\diavolofkhot\Scripts\growGrass.cs" />
+    <Compile Include="Assets\diavolofkhot\Scripts\loadTiles.cs" />
     <Compile Include="Assets\diavolofkhot\Scripts\movements.cs" />
+    <Compile Include="Assets\diavolofkhot\Scripts\movingTiles.cs" />
     <None Include="Assets\diavolofkhot\Texts\dicDemo.txt" />
     <None Include="Assets\diavolofkhot\Texts\mapDemo.txt" />
+    <None Include="Assets\diavolofkhot\Texts\dicGreenDemo.txt" />
     <None Include="Assets\diavolofkhot\Nature_pixel_art_assets\pixel_snapping_README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:/software/unity/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
