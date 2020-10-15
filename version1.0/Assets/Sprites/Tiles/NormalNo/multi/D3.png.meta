@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 6f1d2eca533a98047809b06c9c7b341c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4633355498211079068
+    second: D3_0
+  - first:
+      213: -6076994117329040123
+    second: D3_1
+  - first:
+      213: -8991996974860606778
+    second: D3_2
+  - first:
+      213: -118791821051415781
+    second: D3_3
+  - first:
+      213: -7545359739813827948
+    second: D3_4
+  - first:
+      213: -1928305431713875861
+    second: D3_5
+  - first:
+      213: -4053986536252838842
+    second: D3_6
+  - first:
+      213: -6963277758582858204
+    second: D3_7
+  - first:
+      213: 5459777342927171164
+    second: D3_8
+  - first:
+      213: -3505264232415434008
+    second: D3_9
+  - first:
+      213: -6209717716300828077
+    second: D3_10
+  - first:
+      213: 3411670967187310934
+    second: D3_11
+  - first:
+      213: -814974971791632787
+    second: D3_12
+  - first:
+      213: -5061163226359670175
+    second: D3_13
+  - first:
+      213: 379581254355357369
+    second: D3_14
+  - first:
+      213: 3269494760206776184
+    second: D3_15
+  - first:
+      213: -3894768663677334717
+    second: D3_16
+  - first:
+      213: 1410167047472729236
+    second: D3_17
+  - first:
+      213: 970560490955049812
+    second: D3_18
+  - first:
+      213: 4480480673637071457
+    second: D3_19
+  - first:
+      213: -1180207584304643553
+    second: D3_20
+  - first:
+      213: 504589470147978946
+    second: D3_21
+  - first:
+      213: 1363360164204555011
+    second: D3_22
+  - first:
+      213: -1032763232492417841
+    second: D3_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: D3_0
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3008
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9379fce64cfc4040800000000000000
+      internalID: 4633355498211079068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2508
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aecdd2b4f794790800000000000000
+      internalID: -7545359739813827948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2008
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cee6669b85db7c0800000000000000
+      internalID: -4053986536252838842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_8
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 2008
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e66e5f09605cb40800000000000000
+      internalID: 5459777342927171164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1508
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaeef690ccca5fc0800000000000000
+      internalID: -3505264232415434008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_11
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1508
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65986b93ba0b85f20800000000000000
+      internalID: 3411670967187310934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_12
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1008
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d669681c490a0b4f0800000000000000
+      internalID: -814974971791632787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_14
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1008
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be8f35c32b844500800000000000000
+      internalID: 379581254355357369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_18
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 527
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b8760df9f187d00800000000000000
+      internalID: 970560490955049812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 28
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16af32f1f6ddd2e30800000000000000
+      internalID: 4480480673637071457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_20
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 28
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12cc40847f0f9fe0800000000000000
+      internalID: -1180207584304643553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_21
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 28
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6a29d1379a00700800000000000000
+      internalID: 504589470147978946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_22
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 28
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ba45098d0abe210800000000000000
+      internalID: 1363360164204555011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D3_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc8436df43eaa1f0800000000000000
+      internalID: -1032763232492417841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
